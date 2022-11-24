@@ -4,18 +4,12 @@ jobs:
   Exercie2:
     runs-on: ubuntu-latest
     steps:
-      - name: "install nodeJs"
+      - name: install nodeJs
         uses: actions/checkout@v3
-  Exercie3:
-    needs: Exercie2
-    runs-on: ubuntu-latest
-    steps:
       - name: install npm
-        run: npm i
-  Exercie4:
-    needs: Exercie3
-    runs-on: ubuntu-latest
-    steps:
+        run: npm cd
       - name: run lint
-        run: npm lint
+        run: npm run lint
+      - name: run build
+        run: npm run build
 
