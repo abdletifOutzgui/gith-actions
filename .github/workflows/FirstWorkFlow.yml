@@ -10,12 +10,12 @@ jobs:
     needs: Exercie2
     runs-on: ubuntu-latest
     steps:
-      - name: "install npm"
-        run: "npm ci"
+      - name: install npm
+        run: npm ci
   Exercie4:
     needs: Exercie3
     runs-on: ubuntu-latest
     steps:
-      - name: "run lint"
-        run: "npm lint"
+      - name: run lint
+        run: npm lint
 
