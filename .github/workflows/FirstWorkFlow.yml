@@ -1,19 +1,19 @@
 name: Exercice 2
 on: push
 jobs:
-  Exercie2
+  Exercie2:
     runs-on: ubuntu-latest
-    stpes:
+    steps:
       - name: "install nodeJs"
         uses: actions/checkout@v3
-  Exercie3
+  Exercie3:
     runs-on: ubuntu-latest
-    stpes:
+    steps:
       - name: "install npm"
         run: "npm ci"
-  Exercie4
+  Exercie4:
     runs-on: ubuntu-latest
-    stpes:
+    steps:
       - name: "run lint"
         run: "npm lint"
 
