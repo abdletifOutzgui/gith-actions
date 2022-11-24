@@ -7,11 +7,13 @@ jobs:
       - name: "install nodeJs"
         uses: actions/checkout@v3
   Exercie3:
+    needs: Exercie2
     runs-on: ubuntu-latest
     steps:
       - name: "install npm"
         run: "npm ci"
   Exercie4:
+    needs: Exercie3
     runs-on: ubuntu-latest
     steps:
       - name: "run lint"
