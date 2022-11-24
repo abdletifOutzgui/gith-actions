@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: install npm
-        run: npm ci
+        run: npm help ci
   Exercie4:
     needs: Exercie3
     runs-on: ubuntu-latest
